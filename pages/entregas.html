@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link bt -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- link de mi css -->
     <link rel="stylesheet" href="../css/main.css">
     <title>Entregas Valve</title>
     <!-- link de mi tipografia -->
@@ -10,92 +15,225 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Menu de Navegacion -->
     <header>
         <div class="logo">
-            <a href="../index.html">
+            <a href="index.html">
                 <img src="../assets/img/valve.jpg" alt="">
             </a>
         </div>
         <nav>
             <a href="../index.html" class="nav-link"> Inicio </a>
-            <a href="../pages/valve.html" class="nav-link"> Valve </a>
-            <a href="../pages/historia.html" class="nav-link"> Historia </a>
-            <a href="../pages/steam.html" class="nav-link"> Steam </a>
+            <a href="./valve.html" class="nav-link"> Valve </a>
+            <a href="./historia.html" class="nav-link"> Historia </a>
+            <a href="./entregas.html" class="nav-link"> Entregas </a>
+            <a href="./steam.html" class="nav-link"> Steam </a>
         </nav>
     </header>
 
     <main>
         <div>
-            <h2>Entregas Mas Exitosas de Valve</h2>
+            <h1>Entregas Mas Exitosas de Valve</h1>
         </div>
-        <div class="images-container">
-            <div>
-                <img src="../assets/img/strikego.jpg" alt="">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
             </div>
-            <div>
-                <img src="../assets/img/counterstrike.jpg" alt="">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/img/strikego.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Counter Strike Global Offensive</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/counterstrike.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Counter Strike 1.6</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/halflife.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Half Life</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/tf2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Team Fortress 2</h5>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="../assets/img/halflife.jpg" alt="">
-            </div>
-            <div>
-                <img src="../assets/img/tf2.jpg" alt="">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
         <h2> Counter Strike </h2>
 
         <div class="container-images">
             <img src="../assets/img/cs2.jpg" alt="" class="cs">
-            <p> Counter-Strike comenzó como un mod para Half-Life, el famoso videojuego de disparos en primera persona desarrollado por Valve. Fue creado por Minh Le y Jess Cliffe, quienes lanzaron la primera versión del mod en 1999. La idea era ofrecer una experiencia de combate táctico y en equipo, en contraste con los juegos de disparos más orientados al caos. El mod fue rápidamente adoptado por la comunidad de jugadores debido a su jugabilidad innovadora, que enfatizaba la cooperación entre jugadores y la estrategia en lugar de solo el combate individual. La popularidad de Counter-Strike creció exponencialmente, y pronto se convirtió en uno de los mods más jugados para Half-Life. Reconociendo el potencial de Counter-Strike, Valve adquirió los derechos del mod en 2000. Este movimiento permitió que el juego recibiera un mayor apoyo y desarrollo. La versión 1.0 del juego, que fue lanzada en noviembre de 2000, ya incluía mejoras significativas y se benefició de un mayor alcance a través de la distribución comercial.</p>
+            <p> Counter-Strike comenzó como un mod para Half-Life, el famoso videojuego de disparos en primera persona
+                desarrollado por Valve. Fue creado por Minh Le y Jess Cliffe, quienes lanzaron la primera versión del
+                mod en 1999. La idea era ofrecer una experiencia de combate táctico y en equipo, en contraste con los
+                juegos de disparos más orientados al caos. El mod fue rápidamente adoptado por la comunidad de jugadores
+                debido a su jugabilidad innovadora, que enfatizaba la cooperación entre jugadores y la estrategia en
+                lugar de solo el combate individual. La popularidad de Counter-Strike creció exponencialmente, y pronto
+                se convirtió en uno de los mods más jugados para Half-Life. Reconociendo el potencial de Counter-Strike,
+                Valve adquirió los derechos del mod en 2000. Este movimiento permitió que el juego recibiera un mayor
+                apoyo y desarrollo. La versión 1.0 del juego, que fue lanzada en noviembre de 2000, ya incluía mejoras
+                significativas y se benefició de un mayor alcance a través de la distribución comercial.</p>
         </div>
-    
+
         <div class="container-images container-images__invert">
-            <p> La influencia de Counter-Strike en la industria de los videojuegos fue enorme. Fue uno de los primeros juegos en popularizar el género de disparos tácticos en equipo y ayudó a establecer el concepto de juegos basados en habilidades en lugar de solo en el nivel de experiencia. También fue pionero en el desarrollo de la escena de los eSports, con torneos y competiciones que ayudaron a cimentar su estatus en el ámbito competitivo. Counter-Strike evolucionó con varias versiones y actualizaciones, incluyendo Counter-Strike: Condition Zero, Counter-Strike: Source, y finalmente Counter-Strike: Global Offensive (CS). Cada nueva interacción introdujo mejoras y nuevas características, pero la esencia del juego original siempre se mantuvo. CS, lanzado en 2012, ha continuado la tradición de éxito y es uno de los juegos de disparos en primera persona más populares y jugados en el mundo. El primer Counter-Strike no solo fue un éxito comercial, sino que también dejó una marca duradera en la forma en que se desarrollan y juegan los videojuegos de disparos. Su legado sigue vivo en la escena de los eSports y en la comunidad de jugadores.</p>
-            <img src="../assets/img/major.jpg" alt="" class="major">
+            <p> La influencia de Counter-Strike en la industria de los videojuegos fue enorme. Fue uno de los primeros
+                juegos en popularizar el género de disparos tácticos en equipo y ayudó a establecer el concepto de
+                juegos basados en habilidades en lugar de solo en el nivel de experiencia. También fue pionero en el
+                desarrollo de la escena de los eSports, con torneos y competiciones que ayudaron a cimentar su estatus
+                en el ámbito competitivo. Counter-Strike evolucionó con varias versiones y actualizaciones, incluyendo
+                Counter-Strike: Condition Zero, Counter-Strike: Source, y finalmente Counter-Strike: Global Offensive
+                (CS). Cada nueva interacción introdujo mejoras y nuevas características, pero la esencia del juego
+                original siempre se mantuvo. CS, lanzado en 2012, ha continuado la tradición de éxito y es uno de los
+                juegos de disparos en primera persona más populares y jugados en el mundo. El primer Counter-Strike no
+                solo fue un éxito comercial, sino que también dejó una marca duradera en la forma en que se desarrollan
+                y juegan los videojuegos de disparos. Su legado sigue vivo en la escena de los eSports y en la comunidad
+                de jugadores.</p>
+                <div>
+                    <img src="../assets/img/major.jpg" alt="" class="major">
+                    <iframe height="315" src="https://www.youtube.com/embed/EkJu4laFGTs?si=PWTZEIAMrw7CMuA7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
         </div>
 
         <h2> Half Life </h2>
 
         <div class="container-images">
-            <img src="../assets/img/gman.jpg" alt="" class="man-image">
-            <p> Half-Life, lanzado en 1998 por Valve, fue un hito en la historia de los videojuegos y marcó un antes y un después en el diseño de juegos de disparos en primera persona (FPS). Half-Life se destacó por su enfoque en la narrativa inmersiva y la experiencia del jugador. A diferencia de otros FPS de la época, que solían centrarse en niveles desconectados con historias mínimas, Half-Life presentó una narrativa continua y envolvente. La historia se desarrollaba en tiempo real mientras el jugador avanzaba por los niveles, sin interrupciones por cinemáticas pre-renderizadas. Esto creó una experiencia más inmersiva y fluida. El diseño de niveles de Half-Life era revolucionario. En lugar de simples escenarios de combate, el juego ofrecía entornos detallados y complejos que invitaban a la exploración y la resolución de acertijos. Además, el juego incorporó una inteligencia artificial avanzada para sus enemigos, lo que hizo que los combates fueran más desafiantes e impredecibles. Utilizando el motor GoldSrc, una modificación del motor Quake de id Software, Half-Life presentó gráficos impresionantes para su época, junto con una física y una interacción de objetos que eran innovadoras en comparación con otros juegos de la época.</p>
+            <div>
+                <img src="../assets/img/gman.jpg" alt="" class="man-image">
+                <iframe height="315" src="https://www.youtube.com/embed/kWnzRGD9NDE?si=D4EApBXnUmAtkn4S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p> Half-Life, lanzado en 1998 por Valve, fue un hito en la historia de los videojuegos y marcó un antes y
+                un después en el diseño de juegos de disparos en primera persona (FPS). Half-Life se destacó por su
+                enfoque en la narrativa inmersiva y la experiencia del jugador. A diferencia de otros FPS de la época,
+                que solían centrarse en niveles desconectados con historias mínimas, Half-Life presentó una narrativa
+                continua y envolvente. La historia se desarrollaba en tiempo real mientras el jugador avanzaba por los
+                niveles, sin interrupciones por cinemáticas pre-renderizadas. Esto creó una experiencia más inmersiva y
+                fluida. El diseño de niveles de Half-Life era revolucionario. En lugar de simples escenarios de combate,
+                el juego ofrecía entornos detallados y complejos que invitaban a la exploración y la resolución de
+                acertijos. Además, el juego incorporó una inteligencia artificial avanzada para sus enemigos, lo que
+                hizo que los combates fueran más desafiantes e impredecibles. Utilizando el motor GoldSrc, una
+                modificación del motor Quake de id Software, Half-Life presentó gráficos impresionantes para su época,
+                junto con una física y una interacción de objetos que eran innovadoras en comparación con otros juegos
+                de la época.</p>
         </div>
 
         <div class="container-images container-images__invert">
-            <p> Crítica y Premios: Half-Life recibió aclamación universal de la crítica y ganó numerosos premios, incluyendo varios “Juego del Año”. Los críticos elogiaron su narrativa, diseño de niveles, y la integración de la historia con la jugabilidad. Fue un éxito tanto en términos de ventas como de recepción crítica. El éxito de Half-Life estableció nuevos estándares para los juegos de FPS. Introdujo elementos que se convirtieron en convenciones del género, como la narrativa inmersiva, el diseño de niveles innovador y el enfoque en una experiencia de juego continua. Influenció a numerosos desarrolladores y juegos posteriores, estableciendo una nueva dirección para los FPS. Half-Life llevó a la creación de expansiones notables como Opposing Force y Blue Shift. Además, la popularidad del juego dio lugar a una secuela altamente anticipada, Half-Life 2, lanzada en 2004, que continuó el legado de innovación con avances técnicos y de narrativa aún mayores. Half-Life también fue un precursor de la plataforma Steam, lanzada por Valve en 2003. Steam revolucionó la distribución de juegos digitales y se convirtió en una de las plataformas de distribución más importantes en la industria del videojuego. Half-Life es considerado uno de los mejores videojuegos de todos los tiempos debido a su impacto duradero en el diseño de juegos y su influencia en la evolución del género de los FPS. El juego no solo elevó el estándar de lo que un FPS podía ser, sino que también ayudó a establecer a Valve como una de las principales desarrolladoras de videojuegos en la industria. Su innovador enfoque en la narrativa y el diseño de niveles dejó una marca indeleble en el mundo de los videojuegos y sigue siendo un referente en el desarrollo de juegos hasta el día de hoy.</p>
-            <img src="../assets/img/juego.jpg" alt="" class="juego-contenedor">
+            <p> Crítica y Premios: Half-Life recibió aclamación universal de la crítica y ganó numerosos premios,
+                incluyendo varios “Juego del Año”. Los críticos elogiaron su narrativa, diseño de niveles, y la
+                integración de la historia con la jugabilidad. Fue un éxito tanto en términos de ventas como de
+                recepción crítica. El éxito de Half-Life estableció nuevos estándares para los juegos de FPS. Introdujo
+                elementos que se convirtieron en convenciones del género, como la narrativa inmersiva, el diseño de
+                niveles innovador y el enfoque en una experiencia de juego continua. Influenció a numerosos
+                desarrolladores y juegos posteriores, estableciendo una nueva dirección para los FPS. Half-Life llevó a
+                la creación de expansiones notables como Opposing Force y Blue Shift. Además, la popularidad del juego
+                dio lugar a una secuela altamente anticipada, Half-Life 2, lanzada en 2004, que continuó el legado de
+                innovación con avances técnicos y de narrativa aún mayores. Half-Life también fue un precursor de la
+                plataforma Steam, lanzada por Valve en 2003. Steam revolucionó la distribución de juegos digitales y se
+                convirtió en una de las plataformas de distribución más importantes en la industria del videojuego.
+                Half-Life es considerado uno de los mejores videojuegos de todos los tiempos debido a su impacto
+                duradero en el diseño de juegos y su influencia en la evolución del género de los FPS. El juego no solo
+                elevó el estándar de lo que un FPS podía ser, sino que también ayudó a establecer a Valve como una de
+                las principales desarrolladoras de videojuegos en la industria. Su innovador enfoque en la narrativa y
+                el diseño de niveles dejó una marca indeleble en el mundo de los videojuegos y sigue siendo un referente
+                en el desarrollo de juegos hasta el día de hoy.</p>
+                <div>
+                    <img src="../assets/img/juego.jpg" alt="" class="juego-contenedor">
+                    <iframe height="315" src="https://www.youtube.com/embed/Atz_IGbNaAY?si=imUWF5FyoBO84z_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
         </div>
 
         <h2> Team Fortress 2 </h2>
 
         <div class="container-images">
             <img src="../assets/img/team.jpg" alt="" class="team-img">
-            <p> Team Fortress 2 es otro ejemplo de éxito rotundo para Valve, tanto en términos de recepción crítica como de impacto en el género de los juegos multijugador. Team Fortress 2 fue desarrollado por Valve y lanzado el 10 de octubre de 2007 como parte de The Orange Box, una colección que también incluía Half-Life 2 y sus episodios, así como Portal. El juego se basa en Team Fortress, un mod para Quake desarrollado por Robin Walker y John Cook, que fue adquirido por Valve en 1999. Desde su anuncio, Team Fortress 2 llamó la atención por su distintivo estilo artístico, que se alejaba del realismo gráfico típico de muchos FPS de la época. En lugar de gráficos hiperrealistas, el juego adoptó una estética de caricatura influenciada por los estilos de los años 40 y 50. Este enfoque visual no solo le dio un aspecto único, sino que también ayudó a que el juego se destacara en un mercado saturado.</p>
+            <p> Team Fortress 2 es otro ejemplo de éxito rotundo para Valve, tanto en términos de recepción crítica como
+                de impacto en el género de los juegos multijugador. Team Fortress 2 fue desarrollado por Valve y lanzado
+                el 10 de octubre de 2007 como parte de The Orange Box, una colección que también incluía Half-Life 2 y
+                sus episodios, así como Portal. El juego se basa en Team Fortress, un mod para Quake desarrollado por
+                Robin Walker y John Cook, que fue adquirido por Valve en 1999. Desde su anuncio, Team Fortress 2 llamó
+                la atención por su distintivo estilo artístico, que se alejaba del realismo gráfico típico de muchos FPS
+                de la época. En lugar de gráficos hiperrealistas, el juego adoptó una estética de caricatura
+                influenciada por los estilos de los años 40 y 50. Este enfoque visual no solo le dio un aspecto único,
+                sino que también ayudó a que el juego se destacara en un mercado saturado.</p>
         </div>
 
         <div class="container-images container-images__invert">
-            <p> Team Fortress 2 se destacó por su énfasis en el juego en equipo y sus diversas clases de personajes, cada una con habilidades y roles específicos. Las nueve clases disponibles (como el Soldado, el Médico, el Ingeniero, y el Francotirador) ofrecen diferentes estilos de juego y estrategias, fomentando la cooperación y la coordinación entre los jugadores. Valve continuó apoyando Team Fortress 2 con una serie de actualizaciones y eventos que introdujeron nuevos mapas, modos de juego y, lo más notable, un sistema de cosméticos y personalización. Este enfoque en actualizaciones constantes ayudó a mantener el interés de la comunidad y a expandir el juego durante muchos años. En 2011, Team Fortress 2 cambió a un modelo de negocio free-to-play, lo que permitió a los jugadores descargar y jugar el juego de forma gratuita. Esto fue acompañado por la introducción de microtransacciones a través de una tienda en el juego, donde los jugadores podían comprar artículos cosméticos y otros contenidos. Este cambio no solo atrajo a una nueva base de jugadores, sino que también demostró ser muy lucrativo para Valve.</p>
-            <img src="../assets/img/rojo.jpg" alt="" class="rojo-azul">
+            <p> Team Fortress 2 se destacó por su énfasis en el juego en equipo y sus diversas clases de personajes,
+                cada una con habilidades y roles específicos. Las nueve clases disponibles (como el Soldado, el Médico,
+                el Ingeniero, y el Francotirador) ofrecen diferentes estilos de juego y estrategias, fomentando la
+                cooperación y la coordinación entre los jugadores. Valve continuó apoyando Team Fortress 2 con una serie
+                de actualizaciones y eventos que introdujeron nuevos mapas, modos de juego y, lo más notable, un sistema
+                de cosméticos y personalización. Este enfoque en actualizaciones constantes ayudó a mantener el interés
+                de la comunidad y a expandir el juego durante muchos años. En 2011, Team Fortress 2 cambió a un modelo
+                de negocio free-to-play, lo que permitió a los jugadores descargar y jugar el juego de forma gratuita.
+                Esto fue acompañado por la introducción de microtransacciones a través de una tienda en el juego, donde
+                los jugadores podían comprar artículos cosméticos y otros contenidos. Este cambio no solo atrajo a una
+                nueva base de jugadores, sino que también demostró ser muy lucrativo para Valve.</p>
+                <div>
+                    <img src="../assets/img/rojo.jpg" alt="" class="rojo-azul">
+                    <iframe height="315" src="https://www.youtube.com/embed/KRERmBtYgso?si=6zULPRapR2BYW5Kn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
         </div>
 
         <div class="container-images">
             <img src="../assets/img/sniperingeniero.jpg" alt="" class="sniper-ingeniero">
-            <p> Team Fortress 2 fue aclamado por la crítica por su jugabilidad, diseño de personajes, y estilo visual. Recibió varios premios y nominaciones en distintas categorías, y se destacó como uno de los mejores juegos multijugador de su generación. Su éxito comercial también fue considerable, en parte gracias a su inclusión en The Orange Box y su transición a un modelo free-to-play. El juego desarrolló una comunidad activa y apasionada, y se convirtió en un pilar de la cultura del gaming multijugador. La popularidad del juego llevó a la creación de una gran cantidad de contenido generado por los usuarios, incluyendo mods y mapas personalizados. Team Fortress 2 ha tenido una influencia duradera en el género de los FPS y los juegos multijugador en equipo. Su enfoque en la jugabilidad basada en clases, la personalización de personajes y el estilo visual único ha sido imitado por muchos otros juegos. Además, su modelo de negocios free-to-play con microtransacciones ha sido adoptado por numerosos otros títulos en la industria.</p>
+            <p> Team Fortress 2 fue aclamado por la crítica por su jugabilidad, diseño de personajes, y estilo visual.
+                Recibió varios premios y nominaciones en distintas categorías, y se destacó como uno de los mejores
+                juegos multijugador de su generación. Su éxito comercial también fue considerable, en parte gracias a su
+                inclusión en The Orange Box y su transición a un modelo free-to-play. El juego desarrolló una comunidad
+                activa y apasionada, y se convirtió en un pilar de la cultura del gaming multijugador. La popularidad
+                del juego llevó a la creación de una gran cantidad de contenido generado por los usuarios, incluyendo
+                mods y mapas personalizados. Team Fortress 2 ha tenido una influencia duradera en el género de los FPS y
+                los juegos multijugador en equipo. Su enfoque en la jugabilidad basada en clases, la personalización de
+                personajes y el estilo visual único ha sido imitado por muchos otros juegos. Además, su modelo de
+                negocios free-to-play con microtransacciones ha sido adoptado por numerosos otros títulos en la
+                industria.</p>
         </div>
 
-            <h2> Legado de Team Fortress 2</h2>
+        <h2> Legado de Team Fortress 2</h2>
 
         <div class="container-images container-images__invert">
-            <p> Team Fortress 2 sigue siendo un título relevante en el panorama de los videojuegos, incluso años después de su lanzamiento. Su diseño innovador, su soporte continuo y su modelo de negocio han ayudado a mantenerlo popular entre los jugadores. Valve logró con Team Fortress 2 no solo un gran éxito comercial, sino también un lugar destacado en la historia de los videojuegos multijugador.</p>
+            <p> Team Fortress 2 sigue siendo un título relevante en el panorama de los videojuegos, incluso años después
+                de su lanzamiento. Su diseño innovador, su soporte continuo y su modelo de negocio han ayudado a
+                mantenerlo popular entre los jugadores. Valve logró con Team Fortress 2 no solo un gran éxito comercial,
+                sino también un lugar destacado en la historia de los videojuegos multijugador.</p>
             <img src="../assets/img/equipo.jpg" alt="" class="equipo">
         </div>
     </main>
     <footer>
         <p>Copyright © Matias Miquelarena 2024. Todos los derechos reservados.</p>
     </footer>
-    
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
