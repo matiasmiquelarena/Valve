@@ -1,0 +1,169 @@
+//import de listas
+@import "../utilidades/listas";
+@import "../utilidades/mixin";
+
+/* Estilos desde el header */
+header {
+@include flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 50px;
+        margin-right: 10px;
+        width: auto;
+    }
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    a{
+    font-weight: 600;
+    padding-right: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: nth($list-color, 1 ) !important;
+    }
+}
+
+nav a:hover {
+    color: nth($list-color, 2 ) !important;
+}
+
+/* estilos desde el Main */
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    padding: 20px;
+    display: grid;
+    gap: 40px;
+}
+
+.gallery__container {
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center; 
+    }
+}
+
+h1{
+text-align: center;
+@include medidas (15px, 0 10px)
+}
+
+h2 {
+text-align: center;
+@include medidas (15px, 0 10px)
+}
+
+.container-images {
+@include images;
+}
+
+.container-images > * {
+    width: 50%;
+}
+
+.container-images p{
+    font-size: 14px;
+}
+
+.container-images iframe{
+    width: 100%;
+    margin-top: 10px;
+}
+
+footer {
+@include footer;
+}
+
+footer p {
+    font-size: 12px;
+    color: #FFF;
+}
+
+.carousel .carousel-item img {
+    max-height: 75vh !important;
+    min-width: auto;
+}
+
+/* media */
+
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .gallery__container {
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .gallery__container {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .container-images {
+        flex-direction: column;
+    }
+
+    .container-images img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .container-images.container-images__invert {
+        flex-direction: column-reverse;
+    }
+
+    .container-images > * {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .images-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .images-container * {
+        width: 100%;
+    }
+    .images-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+
+
